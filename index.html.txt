@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3XIUS - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">3XIUS</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="products.html">Produits</a></li>
+        <li><a href="cart.html">Panier</a></li>
+        <li><a href="checkout.html">Paiement</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bannière -->
+  <section class="hero">
+    <h1>Bienvenue chez 3XIUS</h1>
+    <p>Votre boutique en ligne moderne et interactive.</p>
+    <a href="products.html" class="btn">Voir nos produits</a>
+  </section>
+
+  <!-- Présentation -->
+  <section class="about">
+    <h2>À propos</h2>
+    <p>
+      Chez <strong>3XIUS</strong>, nous offrons des produits de qualité pour répondre à vos besoins.
+      Découvrez notre boutique et profitez d’une expérience d’achat simple et rapide.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 3XIUS. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3XIUS - Paiement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">3XIUS</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="products.html">Produits</a></li>
+        <li><a href="cart.html">Panier</a></li>
+        <li><a href="checkout.html" class="active">Paiement</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="checkout">
+    <h2>Paiement</h2>
+    <form id="checkout-form">
+      <label>Nom complet</label>
+      <input type="text" required>
+
+      <label>Adresse</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Méthode de paiement</label>
+      <select required>
+        <option>Carte Bancaire</option>
+        <option>PayPal</option>
+        <option>À la livraison</option>
+      </select>
+
+      <button type="submit" class="btn">Confirmer la commande</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 3XIUS. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById("checkout-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Merci pour votre commande !");
+      localStorage.removeItem("cart"); // Vider le panier
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
