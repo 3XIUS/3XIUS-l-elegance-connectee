@@ -25,6 +25,17 @@
   <p class="price">400 $</p>
   <button class="add-to-cart" data-name="Apple Watch Série 10" data-price="400">Ajouter au panier</button>
 </div>
+<script>
+  // Sélectionne tous les éléments qui ont la classe "price"
+  const prices = document.querySelectorAll('.price');
+  
+  prices.forEach(price => {
+    // Vérifie si le texte ne contient pas déjà $
+    if (!price.textContent.includes('$')) {
+      price.textContent += " $";
+    }
+  });
+</script>
 >
     </div>
   </main>
@@ -36,5 +47,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
