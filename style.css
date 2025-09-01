@@ -5,7 +5,36 @@ body {
   background-color: #111;
   color: #fff;
 }
+css
+.whatsapp-btn, .moncash-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
 
+.moncash-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn {
+  background-color: #128C7E;
+  color: white;
+}
+
+.moncash-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-btn:hover {
+  background-color: #0e7a6a;
+}
 /* Navbar */
 .navbar {
   display: flex;
@@ -183,3 +212,4 @@ body {
   border-radius: 5px;
   border: none;
 }
+
